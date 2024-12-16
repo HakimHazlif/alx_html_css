@@ -1,1 +1,1 @@
-Here '1. Positioning task' from Alx platform that called Savana
+Here '1. Positioning task' and '2. Responsive web design' from Alx platform that called Savana
