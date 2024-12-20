@@ -41,6 +41,10 @@ blockquote {
 li {
   list-style: none;
 }
+button,
+a {
+  cursor: pointer;
+}
 
 header {
   padding: var(--padding-x);
@@ -138,7 +142,6 @@ nav ul li a:hover {
   font-size: 14px;
   position: relative;
   z-index: 10;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .btn:hover {
