@@ -23,6 +23,63 @@ body {
   box-sizing: border-box;
 }
 
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .bbb {
+    animation: fade-in 5s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+
+  @keyframes fade-in {
+    from {
+      scale: 0.5;
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+}
+*/
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .bbb {
+    animation: fade-in ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+
+  @keyframes fade-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+*/
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .bbb {
+    animation: fade-in 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+
+  @keyframes fade-in {
+    from {
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}
+*/
+
 h1,
 h2,
 h3,
@@ -50,6 +107,16 @@ header {
   padding: var(--padding-x);
   margin-top: 20px;
   color: #ffffff;
+  animation: dragMove-down 1s ease forwards;
+}
+
+@keyframes dragMove-down {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 header nav {
@@ -110,6 +177,18 @@ nav ul li a:hover {
   margin-top: 200px;
   position: relative;
   z-index: 10;
+  animation: dragShow 1.5s ease-in-out forwards;
+}
+
+@keyframes dragShow {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .get-schooled h1 {
@@ -146,6 +225,9 @@ nav ul li a:hover {
 }
 .btn:hover {
   background-color: var(--hover-purple);
+}
+.btn:active {
+  opacity: 0.7;
 }
 
 .pros {
@@ -269,7 +351,7 @@ nav ul li a:hover {
   transition: transform 0.3s ease-out;
 }
 .tutorial-img:hover .smile-face {
-  transform: scale(1.04);
+  transform: scale(1.1);
 }
 
 .tutorial-img .play-icon {
@@ -277,7 +359,10 @@ nav ul li a:hover {
   transition: transform 0.3s ease-out;
 }
 .tutorial-img:hover .play-icon {
-  transform: scale(1.2);
+  transform: scale(1.3);
+}
+.tutorial-img:active .play-icon {
+  transform: scale(1);
 }
 
 .tutorial-description {
@@ -302,9 +387,17 @@ nav ul li a:hover {
   display: flex;
   gap: 20px;
   align-items: center;
-  color: var(--purple);
   padding: 14px 0;
   cursor: pointer;
+}
+
+.ratter h4 {
+  color: var(--purple);
+  transition: color 0.3s ease;
+}
+
+.ratter:hover h4 {
+  color: var(--hover-purple);
 }
 
 .ratter img {
@@ -453,6 +546,10 @@ nav ul li a:hover {
 .footer-elements ul li:hover {
   transform: scale(1.2);
   background-color: var(--hover-purple);
+}
+.footer-elements ul li:active {
+  transform: scale(0.9);
+  opacity: 0.7;
 }
 .footer-elements ul li i {
   color: var(--dark-blue);
