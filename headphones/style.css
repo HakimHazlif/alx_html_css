@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "source-sans-pro";
+  src: url(fonts/SourceSansPro-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Spin-Cycle-OT";
+  src: url(fonts/spincycle_ot.otf);
+}
+
+:root {
+  --soft-red: #ff6565;
+  --max-width: 1000px;
+  --padding-x-2xl: 0 168px;
+  --padding-x-xl: 0 100px;
+  --padding-x-lg: 0 50px;
+  --padding-x-sm: 0 10px;
+  --paddig-y: 100px 0;
+  --padding-x-y: 100px 168px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "source-sans-pro", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+}
+
+.menu {
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.top-line,
+.middle-line,
+.bottom-line {
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+.top-line,
+.bottom-line {
+  width: 70%;
+  transition: transform 0.3s linear, top 0.3s linear, left 0.3s linear;
+}
+.top-line {
+  top: 0;
+}
+.bottom-line {
+  bottom: 0;
+}
+.middle-line {
+  width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.3s linear;
+}
+
+.menu:hover .top-line {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+.menu:hover .middle-line {
+  opacity: 0;
+}
+.menu:hover .bottom-line {
+  transform: rotate(45deg);
+  top: 8px;
+  position: absolute;
+}
+
+nav {
+  display: none;
+}
+
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1440px) {
+}
