@@ -3,26 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png+xml" href="images/favicon.ico" />
     <title>Headphones</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <div class="menu">
-        <div class="top-line"></div>
-        <div class="middle-line"></div>
-        <div class="bottom-line"></div>
+      <div class="menu-container">
+        <div class="menu">
+          <div class="top-line"></div>
+          <div class="middle-line"></div>
+          <div class="bottom-line"></div>
+        </div>
       </div>
-      <img src="images/logo_headphones.png" alt="" />
+      <img src="images/logo_headphones.png" alt="logo" />
       <nav>
         <ul>
-          <li>What we do</li>
-          <li>Our results</li>
-          <li>Contact us</li>
+          <li>
+            <a href="#what-we-do">What we do</a>
+          </li>
+          <li><a href="#our-results">Our results</a></li>
+          <li><a href="#contact-us">Contact us</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="hero" id="hero">
+        <img src="images/headphones_hero_1.jpg" alt="hero image" />
+        <article class="hero-info">
+          <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+          <p class="subtitle">
+            Lorem ipsum dolor set amet lorem ipsum dolor set
+          </p>
+          <button class="btn">CALL TO ACTION</button>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit ess cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </article>
+      </section>
+      <section id="what-we-do">
+        <article>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit ess cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <img src="icons/sound-frecuency.svg" alt="sound frecuency" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature">
+              <img src="icons/video.svg" alt="video" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature">
+              <img src="icons/music.svg" alt="music" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature">
+              <img src="icons/hearing.svg" alt="hearing" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="our-results">
+        <article>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit ess cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <div class="results">
+            <div class="result">
+              <img src="images/pentagone.png" alt="pentagone" />
+              <div class="result-value">
+                <h2>+2%</h2>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+            <div class="result">
+              <img src="images/pentagone.png" alt="pentagone" />
+              <div class="result-value">
+                <h2>+2%</h2>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+            <div class="result">
+              <img src="images/pentagone.png" alt="pentagone" />
+              <div class="result-value">
+                <h2>+2%</h2>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+            <div class="result">
+              <img src="images/pentagone.png" alt="pentagone" />
+              <div class="result-value">
+                <h2>+2%</h2>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="contact-us">
+        <form>
+          <label for="input-1"></label>
+          <input type="text" name="input-1" id="input-1" />
+          <label for="input-2"></label>
+          <input type="text" name="input-2" id="input-2" />
+          <label for="input-3"></label>
+          <input type="text" name="input-3" id="input-3" />
+          <div class="submition">
+            <button class="btn" type="submit">CALL TO ACTION</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="images/favicon.png" alt="logo favicon" />
+        <div class="social-media">
+          <ul class="social-media-links">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+      <p>©smileschool 2020</p>
+    </footer>
   </body>
 </html>
